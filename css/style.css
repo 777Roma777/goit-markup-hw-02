@@ -1,4 +1,11 @@
-/* Minimal reset css */
+/* Root налаштування */
+:root {
+    --navy-blue: #2E2F42; 
+    --slate: #434455;
+    --hover-ocean: #404BBF;
+    --iris: #4D5AE5;
+    --cloud: #F4F4FD;
+}
 ol, ul {
     list-style: none;
   }
@@ -15,29 +22,24 @@ body {
     background-color: #fff;
 }
 
-/* Root налаштування */
-:root {
-    --navy-blue: #2E2F42; 
-    --slate: #434455;
-    --hover-ocean: #404BBF;
-}
-
 /* Studio! */
 
 /* Header */
 /* Header logo */
-.logo, .logo:focus {
+.logo {
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 24px;
-    color: #4D5AE5;
+    color: var(--iris);
+    text-transform: uppercase;
 }
+
 .logo-text {
     color: var(--slate);
 }
 .logo-second-text {
-    color: #F4F4FD;
+    color: var(--cloud);
 }
 /* /Header logo */
 /* Header Menu */
@@ -73,7 +75,7 @@ body {
 /* Main */
 /* Hero section */
 .hero-section {
-    background: #2E2F42;
+    background-color: var(--navy-blue) ;
 }
 .hero-text {
     color: #fff;
@@ -84,7 +86,7 @@ body {
     
 }
 .hero-button {
-    background-color: #4D5AE5;
+    background-color: var(--iris);
     color: #fff;
     font-weight: 500;
     font-size: 16px;
@@ -95,7 +97,7 @@ body {
 }
 .hero-button:hover,
 .hero-button:focus {
-    background: #404BBF;
+    background-color: var(--hover-ocean);
 }
 /* /Hero section */
 
@@ -132,7 +134,7 @@ body {
 
 /* Section Team */
 .team {
-    background: #F4F4FD;
+    background: var(--cloud);
 }
 .team-main {
     font-weight: 700;
